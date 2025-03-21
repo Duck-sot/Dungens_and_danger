@@ -1,6 +1,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using SharpDX.MediaFoundation.DirectX;
+using Microsoft.Xna.Framework.Input;
+
 
 namespace Dungens_and_danger
 {
@@ -10,12 +11,40 @@ namespace Dungens_and_danger
         private Vector2 position; 
         private Rectangle hitbox; 
         private int hp; 
+        private KeyboardState kstate; 
 
+        public Player1(Texture2D textuer, Vector2 position,int pixelSize ,int hp){
+             this.textuer = textuer;
+             this.position=position;
+             this.hp=hp;
+             hitbox = new Rectangle((int)position.X,(int)position.Y,pixelSize,pixelSize);
+
+        }
+
+        public void Update() {
+            kstate = Keyboard.GetState();
+        }
         public int Hp{
             get{return hp;}
             set{hp = value;}
         }
 
-        
+        public void Draw(SpriteBatch spriteBatch){
+
+        }
+        private void Move(){
+            if(kstate.IsKeyDown(Keys.W)){
+                position.Y +=10; 
+            }
+            if(kstate.IsKeyDown(Keys.S)){
+                position.Y -=10;
+            }
+            if(kstate.IsKeyDown(Keys.D)){
+                position.X +=10;
+            }
+            if(kstate.IsKeyDown(Keys.A)){
+                position.X -=10;
+            }
+        }
     }
 }
