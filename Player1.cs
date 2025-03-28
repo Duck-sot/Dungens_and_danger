@@ -21,8 +21,11 @@ namespace Dungens_and_danger
 
         }
 
+
         public void Update() {
             kstate = Keyboard.GetState();
+            Move();
+
         }
         public int Hp{
             get{return hp;}
@@ -30,7 +33,7 @@ namespace Dungens_and_danger
         }
 
         public void Draw(SpriteBatch spriteBatch){
-
+            spriteBatch.Draw(textuer,hitbox,Color.DodgerBlue);
         }
         private void Move(){
             if(kstate.IsKeyDown(Keys.W)){
