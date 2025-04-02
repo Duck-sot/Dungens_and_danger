@@ -33,21 +33,22 @@ namespace Dungens_and_danger
         }
 
         public void Draw(SpriteBatch spriteBatch){
-            spriteBatch.Draw(textuer,hitbox,Color.DodgerBlue);
+            spriteBatch.Draw(textuer,hitbox,Color.Teal);
         }
         private void Move(){
             if(kstate.IsKeyDown(Keys.W)){
                 position.Y +=10; 
             }
-            if(kstate.IsKeyDown(Keys.S)){
+            else if(kstate.IsKeyDown(Keys.S)){
                 position.Y -=10;
             }
-            if(kstate.IsKeyDown(Keys.D)){
+             else if(kstate.IsKeyDown(Keys.D)){
                 position.X +=10;
             }
-            if(kstate.IsKeyDown(Keys.A)){
+            else if(kstate.IsKeyDown(Keys.A)){
                 position.X -=10;
             }
+            hitbox.Location = position.ToPoint(); 
         }
     }
 }
