@@ -17,7 +17,7 @@ namespace Dungens_and_danger
              this.textuer = textuer;
              this.position=position;
              this.hp=hp;
-             hitbox = new Rectangle((int)position.X,(int)position.Y,pixelSize,pixelSize);
+             hitbox = new Rectangle((int)position.X,(int)position.Y,160,160);
 
         }
 
@@ -33,13 +33,13 @@ namespace Dungens_and_danger
         }
 
         public void Draw(SpriteBatch spriteBatch){
-            spriteBatch.Draw(textuer,hitbox,Color.Teal);
+            spriteBatch.Draw(textuer,hitbox,Color.NavajoWhite);
         }
         private void Move(){
-            if(kstate.IsKeyDown(Keys.W)){
+            if(kstate.IsKeyDown(Keys.S)){
                 position.Y +=10; 
             }
-            else if(kstate.IsKeyDown(Keys.S)){
+            else if(kstate.IsKeyDown(Keys.W)){
                 position.Y -=10;
             }
              else if(kstate.IsKeyDown(Keys.D)){

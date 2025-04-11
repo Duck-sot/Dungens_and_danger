@@ -16,7 +16,8 @@ public class Game1 : Game
         _graphics = new GraphicsDeviceManager(this);
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
-        _graphics.IsFullScreen=true;
+        _graphics.PreferredBackBufferWidth = 1920;
+        _graphics.PreferredBackBufferHeight = 1080;
         _graphics.ApplyChanges();
     }
 
@@ -31,7 +32,7 @@ public class Game1 : Game
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
         tempcruise = Content.Load<Texture2D>(assetName:"tempcruise");
-        player1 = new Player1(tempcruise, new Vector2(300,350),50,27);
+        player1 = new Player1(tempcruise, new Vector2(70,720),50,27);
         
 
         // TODO: use this.Content to load your game content here
