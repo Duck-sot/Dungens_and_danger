@@ -12,6 +12,7 @@ namespace Dungens_and_danger
         private Rectangle hitbox; 
         private int hp; 
         private KeyboardState kstate; 
+        
 
         public Player1(Texture2D textuer, Vector2 position,int pixelSize ,int hp){
              this.textuer = textuer;
