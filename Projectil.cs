@@ -6,11 +6,22 @@ namespace Dungens_and_danger
     {
         private Texture2D texture;
         private Vector2 position; 
-        private Rctangele hitbox; 
+        private Rectangle hitbox; 
 
-        public Rectangl Hitbox{
+
+        public Rectangle Hitbox{
             get{return hitbox;}
         } 
-        public Projectil
+        public Projectil(Texture2D texture,Vector2 spawnPosition){
+            this.texture = texture; 
+            position = spawnPosition;
+            hitbox = new Rectangle((int)position.X,(int)position.Y,10,10);
+        }
+        public void Update() {
+            hitbox.Location = position.ToPoint();
+        }
+        public void Draw(SpriteBatch spriteBatch){
+            spriteBatch.Draw(texture,hitbox,Color.White);
+        }
     }
 }
