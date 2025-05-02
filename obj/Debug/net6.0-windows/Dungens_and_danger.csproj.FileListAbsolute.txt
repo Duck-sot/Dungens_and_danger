@@ -37,3 +37,5 @@ C:\Users\Admin\Documents\GitHub\Dungens_and_danger\obj\Debug\net6.0-windows\refi
 C:\Users\Admin\Documents\GitHub\Dungens_and_danger\obj\Debug\net6.0-windows\Dungens_and_danger.pdb
 C:\Users\Admin\Documents\GitHub\Dungens_and_danger\obj\Debug\net6.0-windows\Dungens_and_danger.genruntimeconfig.cache
 C:\Users\Admin\Documents\GitHub\Dungens_and_danger\obj\Debug\net6.0-windows\ref\Dungens_and_danger.dll
+C:\Users\Admin\Documents\GitHub\Dungens_and_danger\bin\Debug\net6.0-windows\Content\projectile.xnb
+C:\Users\Admin\Documents\GitHub\Dungens_and_danger\bin\Debug\net6.0-windows\Content\stadium.xnb

@@ -1,4 +1,4 @@
-using System.Drawing;
+
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -52,6 +52,7 @@ namespace Dungens_and_danger
             }
             hitbox.Location = position.ToPoint(); 
         }
+        /*
         private void Shoot(){
             if(kstate.IsKeyDown(Keys.E)){
                 Projectil projectil = new Projectil(textuer,position);
@@ -60,5 +61,6 @@ namespace Dungens_and_danger
                 }
             }
         }
+        */
     }
 }
