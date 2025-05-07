@@ -1,2 +1,4 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/stadium.jpg","C:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/bin/Windows/Content/stadium.xnb","TextureProcessor","Texture2DContent",196233,3686485,0,3114267
+"c:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/groundtile.png","c:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/bin/Windows/Content/groundtile.xnb","TextureProcessor","Texture2DContent",1486,16469,0,3481788
+"c:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/projectile.png","c:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/bin/Windows/Content/projectile.xnb","TextureProcessor","Texture2DContent",555814,4665685,0,3815378
+"c:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/tempcruise.png","c:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/bin/Windows/Content/tempcruise.xnb","TextureProcessor","Texture2DContent",623251,4665685,0,2439209

@@ -4,9 +4,9 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/projectile.png</File>
-    <File>C:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/stadium.jpg</File>
-    <File>C:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/tempcruise.png</File>
+    <File>c:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/groundtile.png</File>
+    <File>c:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/projectile.png</File>
+    <File>c:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/tempcruise.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

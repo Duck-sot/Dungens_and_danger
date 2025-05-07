@@ -12,7 +12,9 @@ public class Game1 : Game
     private SpriteBatch _spriteBatch;
     private Player1 player1;
     private Texture2D tempcruise;
-
+    
+    public static GraphicsDevice GDevice;
+   public static ContentManager CManager;
     public Game1()
     {
         _graphics = new GraphicsDeviceManager(this);
@@ -35,6 +37,8 @@ public class Game1 : Game
         _spriteBatch = new SpriteBatch(GraphicsDevice);
         tempcruise = Content.Load<Texture2D>(assetName:"tempcruise");
         player1 = new Player1(tempcruise, new Vector2(70,720),50,27);
+        GDevice = GraphicsDevice;
+        
         
 
         // TODO: use this.Content to load your game content here

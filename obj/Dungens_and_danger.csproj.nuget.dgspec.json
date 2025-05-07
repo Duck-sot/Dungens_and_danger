@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rasmu\\Documents\\GitHub\\Dungens_and_danger\\Dungens_and_danger.csproj": {}
+    "C:\\Users\\Admin\\Documents\\GitHub\\Dungens_and_danger\\Dungens_and_danger.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rasmu\\Documents\\GitHub\\Dungens_and_danger\\Dungens_and_danger.csproj": {
+    "C:\\Users\\Admin\\Documents\\GitHub\\Dungens_and_danger\\Dungens_and_danger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rasmu\\Documents\\GitHub\\Dungens_and_danger\\Dungens_and_danger.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Dungens_and_danger\\Dungens_and_danger.csproj",
         "projectName": "Dungens_and_danger",
-        "projectPath": "C:\\Users\\rasmu\\Documents\\GitHub\\Dungens_and_danger\\Dungens_and_danger.csproj",
-        "packagesPath": "C:\\Users\\rasmu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rasmu\\Documents\\GitHub\\Dungens_and_danger\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Dungens_and_danger\\Dungens_and_danger.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Dungens_and_danger\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rasmu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,24 +65,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -89,7 +73,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
