@@ -12,9 +12,10 @@ public class Game1 : Game
     private SpriteBatch _spriteBatch;
     private Player1 player1;
     private Texture2D tempcruise;
-    
+    private readonly Map _map; 
     public static GraphicsDevice GDevice;
-   public static ContentManager CManager;
+    public static ContentManager CManager{ get; set; }
+    public static SpriteBatch SpriteBatch { get; set; } 
     public Game1()
     {
         _graphics = new GraphicsDeviceManager(this);
@@ -52,6 +53,7 @@ public class Game1 : Game
 
         // TODO: Add your update logic here
         player1.Update();
+        
         base.Update(gameTime);
     }
 

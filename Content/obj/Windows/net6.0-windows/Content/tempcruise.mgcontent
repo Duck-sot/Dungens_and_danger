@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>c:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/tempcruise.png</SourceFile>
-  <SourceTime>2025-05-07T10:14:13.37698+02:00</SourceTime>
-  <DestFile>c:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/bin/Windows/Content/tempcruise.xnb</DestFile>
-  <DestTime>2025-05-07T10:39:24.2150181+02:00</DestTime>
+  <SourceFile>C:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/tempcruise.png</SourceFile>
+  <SourceTime>2025-05-09T12:46:26.5108099+02:00</SourceTime>
+  <DestFile>C:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/bin/Windows/Content/tempcruise.xnb</DestFile>
+  <DestTime>2025-05-09T13:51:44.4884144+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
