@@ -12,7 +12,7 @@ public class Game1 : Game
     private SpriteBatch _spriteBatch;
     private Player1 player1;
     private Texture2D tempcruise;
-    private readonly Map _map; 
+    private Map _map; 
     public static GraphicsDevice GDevice;
     public static ContentManager CManager{ get; set; }
     public static SpriteBatch SpriteBatch { get; set; } 
@@ -29,16 +29,18 @@ public class Game1 : Game
     protected override void Initialize()
     {
         // TODO: Add your initialization logic here
-        
+        CManager = Content;
         base.Initialize();
     }
 
     protected override void LoadContent()
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
+        SpriteBatch = _spriteBatch;
         tempcruise = Content.Load<Texture2D>(assetName:"tempcruise");
         player1 = new Player1(tempcruise, new Vector2(70,720),50,27);
         GDevice = GraphicsDevice;
+        _map = new();
         
         
 
@@ -62,6 +64,7 @@ public class Game1 : Game
         GraphicsDevice.Clear(Color.CornflowerBlue);
         _spriteBatch.Begin();
         player1.Draw(_spriteBatch);
+        _map.Draw();
         _spriteBatch.End();
 
         // TODO: Add your drawing code here
