@@ -6,11 +6,17 @@ namespace Dungens_and_danger
     {
         private Texture2D texture;
         private Vector2 position; 
-        private Rectangle hitbox; 
+        private Rectangle hitbox;
+        private int bounce;
 
-
-        public Rectangle Hitbox{
-            get{return hitbox;}
+        /*public int Bounce
+        {
+            
+        }
+        */
+        public Rectangle Hitbox
+        {
+            get { return hitbox; }
         } 
         public Projectil(Texture2D texture,Vector2 spawnPosition){
             this.texture = texture; 

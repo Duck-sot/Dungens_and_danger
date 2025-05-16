@@ -12,14 +12,16 @@ namespace Dungens_and_danger
         private Vector2 position; 
         private Rectangle hitbox; 
         private int hp; 
-        private KeyboardState kstate; 
+        private KeyboardState kstate;
+        private bool grounded = true;
         
 
-        public Player1(Texture2D textuer, Vector2 position,int pixelSize ,int hp){
-             this.textuer = textuer;
-             this.position=position;
-             this.hp=hp;
-             hitbox = new Rectangle((int)position.X,(int)position.Y,160,160);
+        public Player1(Texture2D textuer, Vector2 position, int pixelSize, int hp)
+        {
+            this.textuer = textuer;
+            this.position = position;
+            this.hp = hp;
+            hitbox = new Rectangle((int)position.X, (int)position.Y, 160, 160);
 
         }
 
@@ -38,17 +40,20 @@ namespace Dungens_and_danger
             spriteBatch.Draw(textuer,hitbox,Color.NavajoWhite);
         }
         private void Move(){
-            if(kstate.IsKeyDown(Keys.S)){
-                position.Y +=10; 
+            if (kstate.IsKeyDown(Keys.W) && grounded == true)
+            {
+                position.Y += 50;
+                grounded = false;
             }
-            else if(kstate.IsKeyDown(Keys.W)){
-                position.Y -=10;
+            
+
+            if (kstate.IsKeyDown(Keys.D))
+            {
+                position.X += 10;
             }
-             else if(kstate.IsKeyDown(Keys.D)){
-                position.X +=10;
-            }
-            else if(kstate.IsKeyDown(Keys.A)){
-                position.X -=10;
+            else if (kstate.IsKeyDown(Keys.A))
+            {
+                position.X -= 10;
             }
             hitbox.Location = position.ToPoint(); 
         }
