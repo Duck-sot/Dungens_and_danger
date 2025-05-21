@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>c:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/projectile.png</SourceFile>
-  <SourceTime>2025-05-16T12:25:33.6577326+02:00</SourceTime>
-  <DestFile>c:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/bin/Windows/Content/projectile.xnb</DestFile>
-  <DestTime>2025-05-16T13:20:02.6170304+02:00</DestTime>
+  <SourceFile>C:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/projectile.png</SourceFile>
+  <SourceTime>2025-05-21T10:06:04.2958221+02:00</SourceTime>
+  <DestFile>C:/Users/Admin/Documents/GitHub/Dungens_and_danger/Content/bin/Windows/Content/projectile.xnb</DestFile>
+  <DestTime>2025-05-21T10:39:56.8361464+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -16,6 +16,7 @@ public class Game1 : Game
     public static GraphicsDevice GDevice;
     public static ContentManager CManager{ get; set; }
     public static SpriteBatch SpriteBatch { get; set; } 
+    public static float Time{ get; set;}
     public Game1()
     {
         _graphics = new GraphicsDeviceManager(this);
@@ -51,7 +52,7 @@ public class Game1 : Game
     {
         if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
             Exit();
-            
+        Time = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
         // TODO: Add your update logic here
         player1.Update();

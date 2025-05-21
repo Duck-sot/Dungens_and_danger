@@ -14,6 +14,8 @@ namespace Dungens_and_danger
         private int hp; 
         private KeyboardState kstate;
         private bool grounded = true;
+        private float jump = 200f; 
+
         
 
         public Player1(Texture2D textuer, Vector2 position, int pixelSize, int hp)
@@ -40,9 +42,13 @@ namespace Dungens_and_danger
             spriteBatch.Draw(textuer,hitbox,Color.NavajoWhite);
         }
         private void Move(){
+            if (grounded == false)
+            {
+                position.Y += 100 * Game1.Time;
+            }
             if (kstate.IsKeyDown(Keys.W) && grounded == true)
             {
-                position.Y += 50;
+                position.Y -= jump;
                 grounded = false;
             }
             

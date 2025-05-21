@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Admin\\Documents\\GitHub\\Dungens_and_danger\\Dungens_and_danger.csproj": {}
+    "C:\\Users\\Admin\\Documents\\GitHub\\Dungens_and_danger\\Dungens_and_danger.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Admin\\Documents\\GitHub\\Dungens_and_danger\\Dungens_and_danger.csproj": {
+    "C:\\Users\\Admin\\Documents\\GitHub\\Dungens_and_danger\\Dungens_and_danger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Admin\\Documents\\GitHub\\Dungens_and_danger\\Dungens_and_danger.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Dungens_and_danger\\Dungens_and_danger.csproj",
         "projectName": "Dungens_and_danger",
-        "projectPath": "c:\\Users\\Admin\\Documents\\GitHub\\Dungens_and_danger\\Dungens_and_danger.csproj",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Dungens_and_danger\\Dungens_and_danger.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Admin\\Documents\\GitHub\\Dungens_and_danger\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Dungens_and_danger\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
