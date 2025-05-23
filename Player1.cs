@@ -15,6 +15,7 @@ namespace Dungens_and_danger
         private KeyboardState kstate;
         private bool grounded = true;
         private float jump = 200f; 
+        
 
         
 
