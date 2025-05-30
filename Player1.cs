@@ -9,15 +9,15 @@ namespace Dungens_and_danger
     public class Player1
     {
         private Texture2D textuer;
-        private Vector2 position; 
-        private Rectangle hitbox; 
-        private int hp; 
+        private Vector2 position;
+        private Rectangle hitbox;
+        private int hp;
         private KeyboardState kstate;
         private bool grounded = true;
-        private float jump = 200f; 
-        
+        private float jump = 200f;
 
-        
+
+
 
         public Player1(Texture2D textuer, Vector2 position, int pixelSize, int hp)
         {
@@ -29,30 +29,34 @@ namespace Dungens_and_danger
         }
 
 
-        public void Update() {
+        public void Update()
+        {
             kstate = Keyboard.GetState();
             Move();
 
         }
-        public int Hp{
-            get{return hp;}
-            set{hp = value;}
+        public int Hp
+        {
+            get { return hp; }
+            set { hp = value; }
         }
 
-        public void Draw(SpriteBatch spriteBatch){
-            spriteBatch.Draw(textuer,hitbox,Color.NavajoWhite);
+        public void Draw(SpriteBatch spriteBatch)
+        {
+            spriteBatch.Draw(textuer, hitbox, Color.NavajoWhite);
         }
-        private void Move(){
+        private void Move()
+        {
             if (grounded == false)
-            {
-                position.Y += 100 * Game1.Time;
-            }
+                {
+                    position.Y += 100 * Game1.Time;
+                }
             if (kstate.IsKeyDown(Keys.W) && grounded == true)
             {
                 position.Y -= jump;
                 grounded = false;
             }
-            
+
 
             if (kstate.IsKeyDown(Keys.D))
             {
@@ -62,7 +66,7 @@ namespace Dungens_and_danger
             {
                 position.X -= 10;
             }
-            hitbox.Location = position.ToPoint(); 
+            hitbox.Location = position.ToPoint();
         }
         /*
         private void Shoot(){
