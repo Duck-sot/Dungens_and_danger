@@ -80,3 +80,6 @@ C:\Users\rasmu\Documents\GitHub\Dungens_and_danger\obj\Debug\net6.0-windows\refi
 C:\Users\rasmu\Documents\GitHub\Dungens_and_danger\obj\Debug\net6.0-windows\Dungens_and_danger.pdb
 C:\Users\rasmu\Documents\GitHub\Dungens_and_danger\obj\Debug\net6.0-windows\Dungens_and_danger.genruntimeconfig.cache
 C:\Users\rasmu\Documents\GitHub\Dungens_and_danger\obj\Debug\net6.0-windows\ref\Dungens_and_danger.dll
+C:\Users\rasmu\Documents\GitHub\Dungens_and_danger\bin\Debug\net6.0-windows\Content\Blunder.xnb
+C:\Users\rasmu\Documents\GitHub\Dungens_and_danger\bin\Debug\net6.0-windows\Content\TrainP2.xnb
+C:\Users\rasmu\Documents\GitHub\Dungens_and_danger\bin\Debug\net6.0-windows\Content\Untitled.xnb

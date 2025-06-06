@@ -14,20 +14,40 @@ namespace Dungens_and_danger
         private Vector2 position_;
         private Rectangle hitbox;
         private int hp;
-        private KeyboardState kstate;
+        private KeyboardState newkstate;
+        private KeyboardState oldkstate; 
         private bool grounded = true;
         //private const int offset = 10;
-        private float jump = 300f;
+        private float jump = 400f;
         private float mspeed = 10f;
         private bool jumpA = true;
         private List<Projectil> projectils = new List<Projectil>();
+        private List<ProjectileP1L> projectileP1s = new List<ProjectileP1L>();
+        private List<P1ShootDo> p1ShootDos = new List<P1ShootDo>();
+        private List<P1ShootUp> p1ShootUps = new List<P1ShootUp>();
 
 
-
+        public Vector2 Position_
+        {
+            get { return position_; }
+            set { position_ = value; }
+        }
 
         public List<Projectil> Projectils
         {
             get { return projectils; }
+        }
+        public List<ProjectileP1L> ProjectileP1s
+        {
+            get { return projectileP1s; }
+        }
+        public List<P1ShootDo> P1ShootDos
+        {
+            get { return p1ShootDos; }
+        }
+        public List<P1ShootUp> P1ShootUps
+        {
+            get { return p1ShootUps; }
         }
         public Player1(Texture2D textuer, Vector2 position_, int pixelSize, int hp)
         {
@@ -46,13 +66,26 @@ namespace Dungens_and_danger
 
         public void Update()
         {
-            kstate = Keyboard.GetState();
+            newkstate = Keyboard.GetState();
             Move();
             Shoot();
             //UpdatePosition();
+            oldkstate = newkstate;
             foreach (Projectil p in projectils)
             {
                 p.Update();
+            }
+            foreach (ProjectileP1L l in projectileP1s)
+            {
+                l.Update();
+            }
+             foreach (P1ShootUp d in p1ShootUps)
+            {
+                d.Update();
+            }
+            foreach (P1ShootDo u in p1ShootDos)
+            {
+                u.Update();
             }
 
         }
@@ -79,14 +112,26 @@ namespace Dungens_and_danger
             {
                 p.Draw(spriteBatch);
             }
+            foreach (ProjectileP1L l in projectileP1s)
+            {
+                l.Draw(spriteBatch);
+            }
+            foreach (P1ShootUp d in p1ShootUps)
+            {
+                d.Draw(spriteBatch);
+            }
+            foreach (P1ShootDo u in p1ShootDos)
+            {
+                u.Draw(spriteBatch);
+            }
         }
         private void Move()
         {
             if (grounded == false)
             {
-                position_.Y += 100 * Game1.Time;
+                position_.Y += 80 * Game1.Time;
             }
-            if (kstate.IsKeyDown(Keys.W) && jumpA == true)
+            if (newkstate.IsKeyDown(Keys.W) && jumpA == true)
             {
                 position_.Y -= jump;
                 grounded = false;
@@ -94,22 +139,38 @@ namespace Dungens_and_danger
             }
 
 
-            if (kstate.IsKeyDown(Keys.D))
+            if (newkstate.IsKeyDown(Keys.D))
             {
                 position_.X += mspeed;
             }
-            else if (kstate.IsKeyDown(Keys.A))
+            else if (newkstate.IsKeyDown(Keys.A))
             {
                 position_.X -= mspeed;
             }
             hitbox.Location = position_.ToPoint();
         }
-        
-        private void Shoot(){
-            if (kstate.IsKeyDown(Keys.E) && kstate.IsKeyDown(Keys.D))
+
+        private void Shoot()
+        {
+            if (newkstate.IsKeyDown(Keys.V) &&  oldkstate.IsKeyUp(Keys.V))
             {
                 Projectil projectil = new Projectil(textuer, position_);
                 projectils.Add(projectil);
+            }
+            if (newkstate.IsKeyDown(Keys.B) && oldkstate.IsKeyUp(Keys.B))
+            {
+                ProjectileP1L projectileP1 = new ProjectileP1L(textuer, position_);
+                projectileP1s.Add(projectileP1);
+            }
+            if (newkstate.IsKeyDown(Keys.Space) && oldkstate.IsKeyUp(Keys.Space))
+            {
+                P1ShootUp p1ShootUp = new P1ShootUp(textuer, position_);
+                p1ShootUps.Add(p1ShootUp);
+            }
+            if (newkstate.IsKeyDown(Keys.N) && oldkstate.IsKeyUp(Keys.N))
+            {
+                P1ShootDo p1ShootDo = new P1ShootDo(textuer, position_);
+                p1ShootDos.Add(p1ShootDo);
             }
         }
     }

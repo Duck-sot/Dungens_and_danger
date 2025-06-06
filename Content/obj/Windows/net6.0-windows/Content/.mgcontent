@@ -4,11 +4,17 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/rasmu/Documents/GitHub/Dungens_and_danger/Content/Blunder.png</File>
     <File>C:/Users/rasmu/Documents/GitHub/Dungens_and_danger/Content/groundtile.png</File>
     <File>C:/Users/rasmu/Documents/GitHub/Dungens_and_danger/Content/projectile.png</File>
     <File>C:/Users/rasmu/Documents/GitHub/Dungens_and_danger/Content/tempcruise.png</File>
+    <File>C:/Users/rasmu/Documents/GitHub/Dungens_and_danger/Content/TrainP2.png</File>
+    <File>C:/Users/rasmu/Documents/GitHub/Dungens_and_danger/Content/Untitled.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

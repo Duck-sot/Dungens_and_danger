@@ -3,9 +3,9 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Dungens_and_danger
 {
-    public class ProjectileP1L
+    public class BlunderShootR
     {
-                private Texture2D texture;
+        private Texture2D texture;
         private Vector2 position; 
         private Rectangle hitbox;
 
@@ -18,17 +18,17 @@ namespace Dungens_and_danger
             get { return position; }
             set { position = value; }
         }
-        public ProjectileP1L(Texture2D texture, Vector2 spawnPosition)
+        public BlunderShootR(Texture2D texture, Vector2 spawnPosition)
         {
             position = spawnPosition;
-            hitbox = new Rectangle((int)position.X, (int)position.Y, 40, 40);
+            hitbox = new Rectangle((int)position.X, (int)position.Y, 60, 120);
         }
         public void Update() {
-            position.X += 25 ;
+            position.X += 15 ;
             hitbox.Location = position.ToPoint();
         }
         public void Draw(SpriteBatch spriteBatch){
-            texture = Game1.CManager.Load<Texture2D>(assetName: "projectile");
+            texture = Game1.CManager.Load<Texture2D>(assetName: "Blunder");
             spriteBatch.Draw(texture,hitbox,Color.White);
         }
     }
