@@ -32,7 +32,7 @@ namespace Dungens_and_danger
             {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
             {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
         };
-        private static Rectangle[,] hitbox {get;} = new Rectangle[tiles.GetLength(0), tiles.GetLength(1)];
+        private static Rectangle[,] hitboxs {get;} = new Rectangle[tiles.GetLength(0), tiles.GetLength(1)];
 
         public Map()
         {
@@ -52,7 +52,7 @@ namespace Dungens_and_danger
                     int posX = y * Tile_Size;
                     int posY = x * Tile_Size;
                     var tex = tiles[x, y] == 1 ? tile1texuer : null;
-                    hitbox[x, y] = new(posX, posY, Tile_Size, Tile_Size);
+                    hitboxs[x, y] = new(posX, posY, Tile_Size, Tile_Size);
                     Game1.SpriteBatch.Draw(tex, new Vector2(posX, posY), Color.White);
                 }
             }
@@ -78,7 +78,7 @@ namespace Dungens_and_danger
             {
                 for (int y = leftTile; y <= rightTile; y++)
                 {
-                    if (tiles[x, y] != 0) result.Add(hitbox[x, y]);
+                    if (tiles[x, y] != 0) result.Add(hitboxs[x, y]);
                 }
             }
             return result;
@@ -91,3 +91,4 @@ namespace Dungens_and_danger
 
     }
 }
+// jag stöte på problem som jag inte kunde lista ut hur jag löser så att jag gav up gör en ny karta  förlåt Tim 

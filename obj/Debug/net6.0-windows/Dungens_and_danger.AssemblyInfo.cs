@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dungens_and_danger")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b654ba3fe6fa5ba40d5b8d086731c0f1dffb4666")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec7186fe0d8d744dde9029f98b6821b69ebff5c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dungens_and_danger")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dungens_and_danger")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
